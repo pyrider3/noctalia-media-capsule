@@ -44,5 +44,3 @@ def serve(factory,state,name,max_width,height):
                     item['pixels'].seek(0);item['pixels'].write(pixels)
                     conn.send(struct.pack('<II',2,0));item['pending']=False
             except OSError:close(conn)
-
-
